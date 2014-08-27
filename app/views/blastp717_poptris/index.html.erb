@@ -1,0 +1,23 @@
+<% full_title "Blastp717Poptri" %>
+
+
+<table class="pretty">
+  <tr>
+    <th><%=sortable "query 717 id" %></th>
+    <th><%=sortable "target poptri id" %></th>
+    <th><%=sortable "percent identity" %></th>
+    <th><%=sortable "e value" %></th>
+
+
+  </tr>
+  <% for row in @rows %>
+      <tr>
+        <td><%= row.query_717_id %></td>
+        <td><%= row.target_poptri_id %></td>
+        <td><%= row.percent_identity %></td>
+        <td><%= row.e_value %></td>
+
+      </tr>
+  <% end %>
+</table>
+
